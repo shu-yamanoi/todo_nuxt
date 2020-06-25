@@ -4,17 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
+    "build": "nuxt build",
+    "start": "nuxt start",
     "export": "nuxt-ts export",
-    "serve": "nuxt-ts serve"
+    "serve": "nuxt-ts serve",
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^0.4.10",
+    "firebase": "^7.15.4",
     "nuxt": "^2.13.0",
+    "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.0.0"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^1.0.3"
+    "@nuxt/typescript-build": "^1.0.3",
+    "core-js": "2",
+    "push-dir": "^0.4.1"
   }
 }

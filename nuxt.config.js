@@ -1,5 +1,8 @@
 
 export default {
+  router: {
+    base: '/todo_nuxt/'
+  },
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -25,8 +28,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Global CSS
+/*
+** Global CSS
   */
   css: [
   ],
